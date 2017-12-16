@@ -30,7 +30,13 @@ access to all directories under ~/work. This makes the setup easier, as all dire
 
 Now, to setup the django project for e.g, all you need to do is:
 
-1.cd ~/work
+1. cd ~/work
 2. django-admin startproject my_django_play_project
+
+Since django rest framwork is already installed too, you can use it any time.
+
+https://docs.djangoproject.com/en/2.0/intro/tutorial01/#creating-a-project
+
+http://www.django-rest-framework.org/
 
 Happy coding!
