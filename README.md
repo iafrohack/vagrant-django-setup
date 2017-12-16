@@ -17,7 +17,7 @@ Guide:
 4. open your terminal, then cd to the directory you have copied/cloned this repo
 5. vagrant up --provision # this will create and boot up your Ubuntu box for the first time. Might take a few minutes.
 6. Once #5 finishes, run: vagrant ssh # this will ssh to your new Ubuntu box. The initial setup script will also run and get your dependencies + virtual environment setup.
-7. If you want re-run the setup script, delete the string `API_VIRTUALENV_ALREADY_ADDED` from /home/vagrant/.bashrc in your virtual machine, then do vagrant up --provision again.
+7. If you want re-run the setup script, delete the string `VIRTUALENV_ALREADY_ADDED` from /home/vagrant/.bashrc in your virtual machine, then do vagrant up --provision again.
 8. Your machine should be ready at this point. Now run: `workon django_play` to work under your virtual environment.
 At this point, you are ready to start playing with django as you please.
 

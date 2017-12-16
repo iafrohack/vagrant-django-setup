@@ -30,7 +30,7 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 sudo rm /var/lib/apt/lists/lock
 
 #temporary fix for automatically loading the virtual env
-COUNT="$(grep -c API_VIRTUALENV_ALREADY_ADDED /home/vagrant/.bashrc)"
+COUNT="$(grep -c VIRTUALENV_ALREADY_ADDED /home/vagrant/.bashrc)"
 
 if [ $COUNT -le 0 ]
   then
@@ -41,7 +41,7 @@ if [ $COUNT -le 0 ]
     mkdir -p /vagrant/.virtualenvs
     # when running vagrant up --provision, in order to execute this block,
     # ssh to the vm and remove the string below from /home/vagrant/.bashrc
-    echo "# API_VIRTUALENV_ALREADY_ADDED" >> /home/vagrant/.bashrc
+    echo "# VIRTUALENV_ALREADY_ADDED" >> /home/vagrant/.bashrc
     export PROJECT_HOME=/vagrant/
     export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
     source /usr/local/bin/virtualenvwrapper.sh
